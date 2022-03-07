@@ -106,6 +106,7 @@ $a = new Aluno("escola", "localhost", "root", "");
     <section id="direita">
         <table>
             <tr id="titulo">
+                <td>Matrícula</td>
                 <td>Nome</td>
                 <td>Turma</td>
                 <td colspan="2">Telefone</td>
@@ -119,10 +120,7 @@ $a = new Aluno("escola", "localhost", "root", "");
                     echo "<tr>";
                     foreach ($dados[$i] as $key => $value) 
                     {
-                        if($key != "matricula")
-                        {
                             echo "<td>".$value."</td>";
-                        }
                     }
                     ?>
                     <td>
