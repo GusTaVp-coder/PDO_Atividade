@@ -1,15 +1,15 @@
 <?php
 
 //---------------CONEXÃO----------------------
-try {
-    $pdo = new PDO("mysql:dbname=escola;host=localhost","root", "");
+// try {
+//     $pdo = new PDO("mysql:dbname=escola;host=localhost","root", "");
 
-} catch (PDOException $th) {
-    echo "Erro com o banco de dados: " . $th;
-}
-catch (Exception $th) {
-    echo "Erro com o banco de dados: " . $th;
-}
+// } catch (PDOException $th) {
+//     echo "Erro com o banco de dados: " . $th;
+// }
+// catch (Exception $th) {
+//     echo "Erro com o banco de dados: " . $th;
+// }
 
 //---------------INSERT----------------------
 //---Forma 1----
