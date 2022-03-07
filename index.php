@@ -104,6 +104,9 @@ $a = new Aluno("escola", "localhost", "root", "");
         </form>
     </section>
     <section id="direita">
+        <form action="POST" id="formT">
+            <input type="text" name="Pnome" placeholder="Pesquisar aluno por nome">
+        </form>
         <table>
             <tr id="titulo">
                 <td>Matrícula</td>
@@ -130,7 +133,6 @@ $a = new Aluno("escola", "localhost", "root", "");
                     <?php
                     echo "</tr>";
                 }
-                
             }
             else
             {

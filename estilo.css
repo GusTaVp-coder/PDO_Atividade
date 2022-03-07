@@ -71,3 +71,7 @@ h4{
     float: left;
     line-height: 40px;
 }
+form#formT{
+    width: 86%;
+    margin: 30px auto;
+}

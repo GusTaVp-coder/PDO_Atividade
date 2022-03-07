@@ -26,6 +26,18 @@ Class Aluno{
         return $res;
     }
 
+    //BUSCAR DADOS POR NOME
+    public function buscarDadosPorNome($nome)
+        {
+        $res = array();
+        $cmd = $this->pdo->prepare("SELECT * FROM aluno WHERE turma = :n");
+        $cmd->bindValue(":n", $nome);
+        $cmd->execute();
+        
+        $res = $cmd->fetchAll(PDO::FETCH_ASSOC);
+        return $res;
+    }
+
     //FUNÇÃO PARA CADASTRAR ALUNO
     public function cadastrarAluno($nome, $turma, $telefone)
     {
